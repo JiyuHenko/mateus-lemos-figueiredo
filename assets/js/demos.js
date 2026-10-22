@@ -101,7 +101,7 @@
   $('#violet-deny')?.addEventListener('click', () => finish(false));
   $('#violet-reset')?.addEventListener('click', resetViolet);
 
-  // E2E Guard: this is a small illustrative JavaScript linter, not the Go project's engine.
+  // Test Architecture Validator: fictional, standalone JavaScript checks only.
   const goodSample = `test('saves settings', async ({ page }) => {\n  await page.goto('/settings');\n  await page.getByRole('button', { name: 'Save' }).click();\n  await expect(page.getByText('Saved')).toBeVisible();\n});`;
   const badSample = `test.only('saves the form', async ({ page }) => {\n  await page.goto('/settings');\n  await page.waitForTimeout(5000);\n  await page.locator('#save').click();\n});`;
   const editor = $('#guard-editor');
