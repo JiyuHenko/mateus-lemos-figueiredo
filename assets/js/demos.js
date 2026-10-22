@@ -102,7 +102,7 @@
   $('#violet-reset')?.addEventListener('click', resetViolet);
 
   // E2E Guard: this is a small illustrative JavaScript linter, not the Go project's engine.
-  const goodSample = `test('CT-421 saves the form', async ({ page }) => {\n  await page.goto('/settings');\n  await page.getByRole('button', { name: 'Save' }).click();\n  await expect(page.getByText('Saved')).toBeVisible();\n});`;
+  const goodSample = `test('saves settings', async ({ page }) => {\n  await page.goto('/settings');\n  await page.getByRole('button', { name: 'Save' }).click();\n  await expect(page.getByText('Saved')).toBeVisible();\n});`;
   const badSample = `test.only('saves the form', async ({ page }) => {\n  await page.goto('/settings');\n  await page.waitForTimeout(5000);\n  await page.locator('#save').click();\n});`;
   const editor = $('#guard-editor');
   $$('[data-preset]').forEach(button => button.addEventListener('click', () => {
@@ -119,7 +119,7 @@
     const code = editor.value;
     const checks = [
       [!/(?:test|describe)\.only\s*\(/.test(code), 'No focused test left behind (test.only / describe.only)'],
-      [/test\s*\(\s*['"`]CT-\d+/i.test(code), 'Test title includes a traceable CT identifier (demo convention)'],
+      [!/(?:test|describe)\.skip\s*\(/.test(code), 'No accidentally skipped tests (test.skip / describe.skip)'],
       [/\bexpect\s*\(/.test(code), 'An assertion verifies the intended result'],
       [!/\bwaitForTimeout\s*\(/.test(code), 'No fixed sleeps (waitForTimeout)'],
     ];
