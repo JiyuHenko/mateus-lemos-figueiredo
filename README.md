@@ -9,7 +9,7 @@ Personal portfolio for **Mateus Lemos Figueiredo (Jiyu Henko)**, with selected e
 A handmade-feeling brainstorm wall: a pinboard of independent project notes, taped paper, irregular annotations, and a warm cream / terracotta / sage / lilac palette. The homepage is intentionally more personal than a traditional case-study grid.
 
 - **Violet:** 2024 tool-using assistant prototype and linked historical evidence.
-- **E2E Guard:** generic public summary of a developer-tooling idea.
+- **Test Architecture Validator:** a small, fictional, browser-side demonstration of generic automated-test quality checks.
 - **Agentic SDLC Reference:** principles and practices for evidence-based coding-agent workflows.
 - **Custom Mind:** customer-facing product and software work.
 
@@ -17,9 +17,9 @@ There are three **fictional, browser-only educational interactions** in the work
 
 ### Confidentiality boundary
 
-The public E2E Guard sample uses **generic, fictional Playwright code** and generic checks only. It is **not** a port of the Go engine, and **does not reproduce** any employer-specific test naming, layered architecture, rule definitions, internal paths, actual tests, credentials, business systems, or private repository content. PRODEMGE is mentioned only as public professional experience; this portfolio is not affiliated with or endorsed by PRODEMGE.
+The **Test Architecture Validator** is an educational, JavaScript-only demo with **fictional Playwright examples** and generic checks. It is **not** a port of any workplace project or tool. It includes no private naming conventions, proprietary rules, internal paths, real tests, credentials, or business systems. Public employment information is unrelated to this demo; the portfolio is not affiliated with or endorsed by any employer.
 
-Before publishing any future E2E Guard technical material, independently review intellectual-property rights, employer policies, and confidentiality obligations. Private customer and employer code stays private.
+Any future technical material inspired by workplace projects must be reviewed independently for intellectual-property rights, employer policies, and confidentiality obligations. Private customer and employer code stays private.
 
 ## Run locally
 
