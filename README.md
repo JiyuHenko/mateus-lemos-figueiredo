@@ -1,47 +1,45 @@
-# Mateus Lemos Figueiredo — Portfolio
+# Mateus Lemos Figueiredo — a personal workbench
 
-A personal portfolio for **Mateus Lemos Figueiredo** (also known as **Jiyu Henko**), focused on applied AI, developer tooling, test automation, software engineering and client-facing delivery.
+Personal portfolio for **Mateus Lemos Figueiredo (Jiyu Henko)**, with selected experiments in applied AI, developer tools, browser automation, and software engineering.
 
-**Website:** https://jiyuhenko.github.io/mateus-lemos-figueiredo/
+**Live site (main branch):** https://jiyuhenko.github.io/mateus-lemos-figueiredo/
 
-## Selected work
+## Design
 
-- **Violet (2024):** a tool-using AI assistant prototype with browser automation, persistent context, observed tool results and human approval.
-- **E2E Guard (2026):** a Go developer tool to identify structural issues and conventions in automated test suites.
-- **Agentic SDLC Reference:** engineering practices for safer and more verifiable coding-agent workflows.
-- **Custom Mind:** software and automation work with clients across industries.
+A handmade-feeling brainstorm wall: a pinboard of independent project notes, taped paper, irregular annotations, and a warm cream / terracotta / sage / lilac palette. The homepage is intentionally more personal than a traditional case-study grid.
 
-Some projects and implementations are private. Public explanations focus on the relevant architecture, decisions and evidence rather than exposing client work.
+- **Violet:** 2024 tool-using assistant prototype and linked historical evidence.
+- **E2E Guard:** generic public summary of a developer-tooling idea.
+- **Agentic SDLC Reference:** principles and practices for evidence-based coding-agent workflows.
+- **Custom Mind:** customer-facing product and software work.
 
-## A little playground
+There are three **fictional, browser-only educational interactions** in the workbench: Violet approval flow, a simplified Playwright code-check sketch, and a fast-vs-release-gates comparison. These are not live tools, do not execute user code, and do not call employer systems or external APIs.
 
-The home page includes three small interactive sketches:
+### Confidentiality boundary
 
-1. **Violet:** move through a simulated tool request and approve or deny the action.
-2. **E2E Guard:** try a lightweight JavaScript test checker with editable examples.
-3. **Agentic SDLC:** compare fast iteration checks with fuller release evidence.
+The public E2E Guard sample uses **generic, fictional Playwright code** and generic checks only. It is **not** a port of the Go engine, and **does not reproduce** any employer-specific test naming, layered architecture, rule definitions, internal paths, actual tests, credentials, business systems, or private repository content. PRODEMGE is mentioned only as public professional experience; this portfolio is not affiliated with or endorsed by PRODEMGE.
 
-These are **educational, browser-only simulations**, not live integrations, real filesystem tools, or the production E2E Guard engine. They make no network calls or external API requests.
+Before publishing any future E2E Guard technical material, independently review intellectual-property rights, employer policies, and confidentiality obligations. Private customer and employer code stays private.
 
 ## Run locally
 
-This is a static website with **no build step and no runtime dependencies**.
+A static site with no build step or runtime packages:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Open http://localhost:8000/ in your browser.
+- Home and brainstorming board: `index.html`
+- Existing shared/demo styling: `assets/css/warm.css`
+- Brainstorm composition: `assets/css/brainstorm.css`
+- Browser demo interactions: `assets/js/demos.js`
+- Theme highlighting interaction: `assets/js/board.js`
+- Case studies: `cases/violet.html`, `cases/agentic-sdlc.html`
 
-- Homepage: `index.html`
-- Design system: `assets/css/warm.css`
-- Demo interactions: `assets/js/demos.js`
-- Technical-case layout: `assets/css/portfolio-v2.css`
-- Case studies: `cases/violet.html` and `cases/agentic-sdlc.html`
+The existing portrait at `profile.jpg` and evidence screenshots remain unchanged.
 
 ## Links
 
 - GitHub: https://github.com/JiyuHenko
 - LinkedIn: https://www.linkedin.com/in/jiyu-henko-539253332/
 - Custom Mind: https://www.custommind.com.br/
-- Email: mateusllemosf@gmail.com
